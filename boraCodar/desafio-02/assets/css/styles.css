@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,600;1,600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --lilas: #D9CDF7;
+    --roxo: #271A45;
+
+    --fonte-principal: 'Crimson Pro', serif;
+    --fonte-secundaria: 'Lato', sans-serif;
+
+}
+
+body {
+    background-color: var(--lilas);
+}
+
+main {
+    position: relative;
+    width: 100vw;
+}
+
+.principal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+}
+
+.texto {
+    color: var(--roxo);
+    font-family: var(--fonte-secundaria);
+    margin-left: 13px;
+}
+
+span {
+    font: 300 10px var(--fonte-secundaria);
+    text-transform: uppercase;
+}
+
+h1 {
+    font: 600 32px var(--fonte-principal);
+    margin-top: 12px;
+}
+
+p {
+    font: 400 16px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: 12px var(--fonte-secundaria);
+    text-transform: uppercase;
+}
+
+#botao-360, #botao-360::before, #botao-x {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+#botao-x {
+    display: none;
+    transform: translate(-60%, 25%);
+    z-index: 1;
+}
+
+#botao-360::before {
+    content: url(../img/img-360.svg);   
+}
+
+#botao-x::before {
+    content: url(../img/img-x.svg);
+}
+
+.botao-cesta {
+    border: solid 0.5px var(--roxo);
+    border-radius: 999px;
+    margin-top: 8px;
+    padding: 8px 16px;
+}
+
+.imagem-botao {
+    position: relative;
+}
+
+div.texto > * {
+    margin-bottom: 12px;
+}
