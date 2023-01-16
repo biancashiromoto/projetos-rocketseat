@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --roxo-background: #0F0D13;
+    --roxo-player: #2A2141;
+    --branco: #E1E1E6;
+
+    --fonte-titulo: 700 24px 'Roboto', sans;
+    --fonte-corpo: 400 14px 'Roboto', sans;
+
+}
+
+body {
+    background-color: var(--roxo-background);
+}
+
+main {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto 3fr;
+    grid-template-rows: auto 2fr;
+    margin: 3rem auto;
+    width: 80%;
+}
+
+.card {
+    background-color: var(--roxo-player);
+    display: flex;
+}
+
+.grande {
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.medio {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+}
+
+.pequeno {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 2;
+}
