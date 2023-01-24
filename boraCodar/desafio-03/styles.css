@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --preto: #0b0911;
+  --branco: #FFFFFF;
+  --rosa-claro: #D9cdf7;
+  --roxo-claro: #8257e5;
+
+  --fonte: 500 14px 'Inter', sans-serif;
+}
